@@ -19,6 +19,7 @@ function updateTime() {
   parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
   parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 }
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -37,7 +38,8 @@ function updateCity(event) {
             "h:mm:ss"
           )} <small>${cityTime.format("A")}</small></div>
         </div>
-      </div>`;
+      </div>
+      <a href="/" id="link">Home</a>`;
 }
 
 updateTime();
